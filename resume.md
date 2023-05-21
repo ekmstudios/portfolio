@@ -1,10 +1,10 @@
 # Resume
 
 ## Contact Info
-Errol Mayer
-818.319.5906
-errolmayer@hotmail.com
-https://www.ekmstudios.com
+Errol Mayer  
+818.319.5906  
+[errolmayer@hotmail.com](mailto:errolmayer@hotmail.com)   
+[https://www.ekmstudios.com](https://www.ekmstudios.com)
 
 
 ## SUMMARY
@@ -29,37 +29,38 @@ Accomplished Technical Writer and Application Developer with over twenty years o
 
 ### Independent Contractor, Web and Mobile Application Developer, 2009 - 2020
 - Created process flowcharts and infrastructure diagrams. Collaborated in writing and editing content for online training programs. 
-•	Developed and maintained multiple mobile apps using Swift, Xcode, Kotlin, Android Studio. Also incorporated third party frameworks and RESTful APIs.
-•	Design, develop, and maintain websites and online training programs using PHP, MYSQL, HTML/CSS, and JavaScript.
-Kaiser Permanente, Application Developer, 2008
-•	Worked with the marketing and sales department to prototype, design, and develop a new rate-quote reporting system using Adobe Flex, Flash, and ActionScript.
-•	Developed and designed a web application using Adobe Flex that enabled Account Managers to manage meeting events with their customers. The application connected to SalesForce APIs and data.
+- Developed and maintained multiple mobile apps using Swift, Xcode, Kotlin, Android Studio. Also incorporated third party frameworks and RESTful APIs.
+- Design, develop, and maintain websites and online training programs using PHP, MYSQL, HTML/CSS, and JavaScript.
+
+### Kaiser Permanente, Application Developer, 2008
+- Worked with the marketing and sales department to prototype, design, and develop a new rate-quote reporting system using Adobe Flex, Flash, and ActionScript.
+- Developed and designed a web application using Adobe Flex that enabled Account Managers to manage meeting events with their customers. The application connected to SalesForce APIs and data.
 
 ### Additional Experience
-Elsevier, Flash and Elearning Developer, Media Coordinator, 2006-2007
-Eagan Mcallister & Associates, Web Developer, 2005
-University of Houston at Clear Lake, Web Developer, Houston, TX 2004
-RWD Technologies, Inc., Technical Editor/Developer, 2002-2004
-Morningstar, Inc., Technical Writer/Web Developer, 1999-2001
-Reed & Associates, Ltd., Technical Writer, 1998-1999
+- Elsevier, Flash and Elearning Developer, Media Coordinator, 2006-2007
+- Eagan Mcallister & Associates (contractor for Department of Defense), Web Developer, 2005
+- University of Houston at Clear Lake, Web Developer, Houston, TX 2004
+- RWD Technologies, Inc., Technical Editor/Developer, 2002-2004
+- Morningstar, Inc., Technical Writer/Web Developer, 1999-2001
+= Reed & Associates, Ltd., Technical Writer, 1998-1999
 
 ### Additional Accomplishments
-•	Wrote technical documentation that included the following: service manuals; installation, user, and system administrator guides; training materials; and lockout/tagout procedures to satisfy OSHA requirements.
-•	Developed and maintained interactive eLearning modules using Flash, ActionScript, CSS, JavaScript, XML, PHP, and several graphics, video, and audio editing programs. 
-•	Coordinated a team of media developers working remotely to create multiple eLearning courses for a leading publisher.
-•	Designed, developed, and wrote all documentation for an intranet information site using HTML/CSS, XML, XSL, SQL, ASP, and JavaScript. The documentation included API documentation, process-flow diagrams, and troubleshooting procedures.
-•	Supported the US Marines with the following tasks: 
-•	Developed interactive, computer-based training and web-based training using XML, CSS, Flash, ActionScript, and several graphics programs.
-•	Developed web applications and web sites using MYSQL and Coldfusion.
-•	Wrote technical documentation, including procedures, requirement documents, and web content. 
-•	Developed an asset inventory database for a leading healthcare manufacturer.
+- Wrote technical documentation that included the following: service manuals; installation, user, and system administrator guides; training materials; and lockout/tagout procedures to satisfy OSHA requirements.
+- Developed and maintained interactive eLearning modules using Flash, ActionScript, CSS, JavaScript, XML, PHP, and several graphics, video, and audio editing programs. 
+- Coordinated a team of media developers working remotely to create multiple eLearning courses for a leading publisher.
+- Designed, developed, and wrote all documentation for an intranet information site using HTML/CSS, XML, XSL, SQL, ASP, and JavaScript. The documentation included API documentation, process-flow diagrams, and troubleshooting procedures.
+- Supported the US Marines with the following tasks: 
+- Developed interactive, computer-based training and web-based training using XML, CSS, Flash, ActionScript, and several graphics programs.
+- Developed web applications and web sites using MYSQL and Coldfusion.
+- Wrote technical documentation, including procedures, requirement documents, and web content. 
+- Developed an asset inventory database for a leading healthcare manufacturer.
 
 
 ## EDUCATION
-Northern Illinois University, DeKalb, IL
+Northern Illinois University, DeKalb, IL  
 Bachelor of Arts, English
 
-Illinois State University, Normal, IL
+Illinois State University, Normal, IL  
 Bachelor of Science, Social Sciences
 
 
