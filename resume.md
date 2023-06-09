@@ -11,7 +11,7 @@ Errol Mayer
 Accomplished Technical Writer and Application Developer with over twenty years of experience working in a variety of industries. I have successfully collaborated on high energy, cross-functional teams to develop and document new and exciting products and solutions from idea to launch. 
 
 ## TECHNICAL SKILLS
-- **Languages:** Swift (5), Kotlin(2), HTML/CSS (10+), XML (10+), JavaScript (10+), SQL (10+), PHP (10+), React (2), GraphQL (2)
+- **Languages:** Swift (5), Kotlin(2), HTML/CSS (10+), XML (10+), JavaScript (10+), TypeScript (1), SQL (10+), PHP (10+), React (2), GraphQL (2)
 - **Databases:** MYSQL (10+)
 - **Development Software:** MS Office (10+), Xcode (5), Android Studio (2), Photoshop (6), Illustrator (4), Adobe Flash/Animate (10), Visual Studio Code (4), Git/GitHub(3), Jira (3), Confluence (3), Gatsby.js (3), Docker (1), Kubernetes (1)  
 - **Cloud Computing:** Google Firebase (1)
@@ -23,14 +23,22 @@ Accomplished Technical Writer and Application Developer with over twenty years o
 - Worked with team members to help streamline how we organized pages in Confluence to more easily find and maintain relevant documentation.
 - Mentored other technical writers with professional development and worked through approaches and solutions to address any questions or challenges.
 
+### Independent Contractor, Web and Mobile Application Developer, 2009 - 2020
+- Designed and developed multiple iOS apps using Swift, SpriteKit, Xcode, Photoshop, and Illustrator. Also incorporated third party frameworks. The apps include the following:
+  - **SodaPop!** - Designed and developed using Swift, SpriteKit, Xcode, Photoshop, and Illustrator. Connected to a MYSQL database with PHP for players to signin in and track their high scores. In a previous version, also installed Admob with CocoaPods.
+[https://apps.apple.com/us/app/soda-pop/id1453570083](https://apps.apple.com/us/app/soda-pop/id1453570083)
+  - **Drop The Beet** - Designed and developed using Swift, SpriteKit, Xcode, Photoshop, and Illustrator. In a previous version, also installed Admob with CocoaPods. [https://apps.apple.com/us/app/drop-the-beet/id1402236459](https://apps.apple.com/us/app/drop-the-beet/id1402236459)
+  - **Porcupine Popper** - Designed and developed using Swift, SpriteKit, Xcode, Photoshop, and Illustrator. In a previous version installed Admob with CocoaPods. [https://apps.apple.com/us/app/porcupine-popper/id1122037495](https://apps.apple.com/us/app/porcupine-popper/id1122037495)
+  - **AP World History Terms** - Designed and developed this app with my brother who is an AP World History teacher to help students study for their AP World History exam. [https://apps.apple.com/us/app/ap-world-history-terms/id641418558](https://apps.apple.com/us/app/ap-world-history-terms/id641418558)
+- Created process flowcharts and infrastructure diagrams. Collaborated in writing and editing content for online training programs. 
+- Developed and maintained multiple mobile apps using Swift, Xcode, Kotlin, Android Studio. Also incorporated third party frameworks and RESTful APIs.
+- Design, develop, and maintain websites and online training programs using PHP, MYSQL, HTML/CSS, and JavaScript.
+
 ### Wolters Kluwer, Web Developer and Technical Writer, 2009 - 2020
 - Wrote user manuals and other documentation and help materials to support multiple products. 
 - Performed team-lead responsibilities by managing workflow to other members of the team (including off-shore resources).
 
-### Independent Contractor, Web and Mobile Application Developer, 2009 - 2020
-- Created process flowcharts and infrastructure diagrams. Collaborated in writing and editing content for online training programs. 
-- Developed and maintained multiple mobile apps using Swift, Xcode, Kotlin, Android Studio. Also incorporated third party frameworks and RESTful APIs.
-- Design, develop, and maintain websites and online training programs using PHP, MYSQL, HTML/CSS, and JavaScript.
+
 
 ### Kaiser Permanente, Application Developer, 2008
 - Worked with the marketing and sales department to prototype, design, and develop a new rate-quote reporting system using Adobe Flex, Flash, and ActionScript.
