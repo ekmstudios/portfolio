@@ -1,0 +1,240 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Token API",
+    "version": "1.0.0",
+    "description": "Issues OAuth 2.0 tokens for API authentication.\nUse the appropriate grant type based on your scenario:\n- client_credentials (server-to-server)\n- authorization_code (user login exchange)\n- refresh_token (renew expired access tokens)\n",
+    "contact": {
+      "name": "Developer Support",
+      "url": "https://developer.example.com/support"
+    },
+    "x-last-updated": "2025-10-13"
+  },
+  "servers": [
+    {
+      "url": "https://marketplace.walmartapis.com/v3",
+      "description": "Production"
+    },
+    {
+      "url": "https://sandbox.walmartapis.com/v3",
+      "description": "Sandbox"
+    }
+  ],
+  "paths": {
+    "/token": {
+      "post": {
+        "summary": "Obtain access token",
+        "description": "Exchange credentials for an OAuth 2.0 access token.\nAccess tokens expire after 900 seconds (15 minutes). Refresh tokens are valid for 1 year.\nThis endpoint does not require prior authentication.\n",
+        "operationId": "createToken",
+        "tags": [
+          "Authentication"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequest"
+              },
+              "examples": {
+                "client_credentials": {
+                  "summary": "Client Credentials",
+                  "value": {
+                    "grant_type": "client_credentials",
+                    "client_id": "YOUR_CLIENT_ID",
+                    "client_secret": "YOUR_CLIENT_SECRET"
+                  }
+                },
+                "authorization_code": {
+                  "summary": "Authorization Code",
+                  "value": {
+                    "grant_type": "authorization_code",
+                    "client_id": "YOUR_CLIENT_ID",
+                    "client_secret": "YOUR_CLIENT_SECRET",
+                    "code": "AUTH_CODE_FROM_LOGIN",
+                    "redirect_uri": "https://yourapp.example.com/callback"
+                  }
+                },
+                "refresh_token": {
+                  "summary": "Refresh Token",
+                  "value": {
+                    "grant_type": "refresh_token",
+                    "client_id": "YOUR_CLIENT_ID",
+                    "client_secret": "YOUR_CLIENT_SECRET",
+                    "refresh_token": "PREVIOUS_REFRESH_TOKEN"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token successfully issued",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenResponse"
+                },
+                "examples": {
+                  "success": {
+                    "summary": "Successful token response",
+                    "value": {
+                      "access_token": "eyJhbGciOi...",
+                      "token_type": "Bearer",
+                      "expires_in": 900,
+                      "refresh_token": "abcdef123456..."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request (missing/invalid parameters)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                },
+                "examples": {
+                  "invalid_request": {
+                    "value": {
+                      "error": "invalid_request",
+                      "error_description": "Missing required parameter: grant_type"
+                    }
+                  },
+                  "invalid_grant": {
+                    "value": {
+                      "error": "invalid_grant",
+                      "error_description": "Authorization code has expired"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid client credentials",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                },
+                "examples": {
+                  "invalid_client": {
+                    "value": {
+                      "error": "invalid_client",
+                      "error_description": "Client authentication failed"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TokenRequest": {
+        "type": "object",
+        "required": [
+          "grant_type",
+          "client_id",
+          "client_secret"
+        ],
+        "properties": {
+          "grant_type": {
+            "type": "string",
+            "description": "OAuth 2.0 grant type",
+            "enum": [
+              "client_credentials",
+              "authorization_code",
+              "refresh_token"
+            ]
+          },
+          "client_id": {
+            "type": "string",
+            "description": "Client ID issued by the developer portal"
+          },
+          "client_secret": {
+            "type": "string",
+            "description": "Client Secret associated with the Client ID"
+          },
+          "code": {
+            "type": "string",
+            "description": "Authorization code issued to the client (authorization_code flow)"
+          },
+          "redirect_uri": {
+            "type": "string",
+            "format": "uri",
+            "description": "Redirect URI registered for the client (authorization_code flow)"
+          },
+          "refresh_token": {
+            "type": "string",
+            "description": "Token used to obtain a new access token (refresh_token flow)"
+          }
+        },
+        "description": "Form fields for token issuance via OAuth 2.0"
+      },
+      "TokenResponse": {
+        "type": "object",
+        "required": [
+          "access_token",
+          "token_type",
+          "expires_in"
+        ],
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "description": "Opaque or JWT access token"
+          },
+          "token_type": {
+            "type": "string",
+            "description": "Token type, typically 'Bearer'",
+            "enum": [
+              "Bearer"
+            ]
+          },
+          "expires_in": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Lifetime of the access token in seconds (typically 900)",
+            "example": 900
+          },
+          "refresh_token": {
+            "type": "string",
+            "nullable": true,
+            "description": "Refresh token used to obtain new access tokens (valid up to 1 year)"
+          }
+        },
+        "description": "Access token response payload"
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error code per RFC 6749 (e.g., invalid_request, invalid_client, invalid_grant)"
+          },
+          "error_description": {
+            "type": "string",
+            "description": "Human-readable description of the error"
+          }
+        },
+        "description": "Standard OAuth 2.0 error response"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Authentication",
+      "description": "OAuth 2.0 token issuance and management"
+    }
+  ]
+}
